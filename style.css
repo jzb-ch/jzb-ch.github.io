@@ -12,6 +12,7 @@
             --color-accent: #1A1A1A;
             --font-display: 'DM Serif Display', serif;
             --font-body: 'DM Sans', sans-serif;
+            --color-yellow: #FFFB81;
         }
 
         html {
@@ -179,7 +180,7 @@
         }
 
         /* ── WORK ── */
-     #work {
+        #work {
          padding-top: 120px;
          border-top: 1px solid #E5E5E2;
         }
@@ -282,14 +283,18 @@
         }
 
         .service-card-icon {
-            width: 48px;
-            height: 48px;
-            background-color: #2A2A2A;
-            border-radius: 8px;
+            width: 52px;
+            height: 52px;
             margin-bottom: 24px;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .service-card-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .service-card h4 {
