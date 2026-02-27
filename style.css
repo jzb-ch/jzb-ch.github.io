@@ -159,6 +159,7 @@
         }
 
         .ticker-track span {
+            font-family: var(--font-display);
             font-size: 13px;
             font-weight: 400;
             letter-spacing: 0.08em;
