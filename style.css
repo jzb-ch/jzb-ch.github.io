@@ -323,3 +323,117 @@
             font-size: 13px;
             color: var(--color-muted);
         }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+
+        /* NAV */
+        nav {
+            padding: 24px 24px;
+        }
+
+        .nav-logo img {
+            width: 52px;
+            height: 52px;
+        }
+
+        .nav-links {
+            gap: 24px;
+        }   
+
+        .nav-links a {
+            font-size: 13px;
+        }
+
+        /* HERO */
+        .hero {
+            padding: 80px 24px 100px;
+        }
+
+        .hero-eyebrow {
+            font-size: 18px;
+        }
+
+        .hero-title {
+            font-size: clamp(24px, 7vw, 36px);
+        }
+
+        .rotator {
+            height: 2.6em;
+            width: 100%;
+            display: block;
+        }
+
+        .rotator-inner span {
+            height: 2.6em;
+            line-height: 1.25;
+            display: flex;
+            align-items: center;
+        }
+
+        /* ABOUT */
+        #about {
+            padding: 80px 24px;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }   
+
+        .about-text p {
+            font-size: 16px;
+        }
+
+        /* TICKER */
+        .ticker {
+            padding: 20px 0;
+        }
+
+        /* WORK */
+        #work {
+            padding-top: 80px;
+        }
+
+        #work .section-label {
+            padding: 0 24px;
+            margin-bottom: 48px;
+        }
+
+        .work-card {
+            grid-template-columns: 1fr;
+            gap: 32px;
+            padding: 40px 24px;
+            height: auto;
+            min-height: 100vh;
+        }
+
+        .work-card-content h3 {
+            font-size: 28px;
+        }
+
+        /* SERVICES */
+        #services {
+            padding: 80px 24px;
+        }
+
+        #services .section-label {
+            margin-bottom: 48px;
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .service-card {
+            padding: 28px 20px;
+        }
+
+        .service-card h4 {
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 32px 24px;
+        }
+
+}
