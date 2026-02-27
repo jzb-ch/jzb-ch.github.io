@@ -89,7 +89,7 @@
             display: inline-block;
             overflow: hidden;
             vertical-align: bottom;
-            height: 1.05em;
+            height: 1.25em;
         }
 
         .rotator-inner {
@@ -100,8 +100,8 @@
 
         .rotator-inner span {
             display: block;
-            height: 1.05em;
-            line-height: 1.05;
+            height: 1.25em;
+            line-height: 1.25;
         }
 
         @keyframes rotate {
