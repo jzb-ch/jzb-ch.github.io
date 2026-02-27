@@ -69,43 +69,47 @@
     <!-- WORK -->
     <section id="work">
         <p class="section-label">my work</p>
-        <div class="work-grid">
+        <div class="work-stack">
 
-            <div class="work-card">
+            <div class="work-card" id="card-1">
                 <div class="work-card-image">
-                    <img src="Images/begin.webp" alt="">
+                    <img src="images/streaming.webp" alt="Streaming & OTT Begin">
                 </div>
                 <div class="work-card-content">
+                    <p class="work-number">01 — Streaming</p>
                     <h3>Streaming & OTT Begin</h3>
                     <p>Your project description goes here. A brief overview of the challenge, your role, and the outcome.</p>
                 </div>
             </div>
 
-            <div class="work-card">
+            <div class="work-card" id="card-2">
                 <div class="work-card-image">
-                    <img src="Images/bim.webp" alt="">
+                    <img src="images/bim.webp" alt="BIM aug.e">
                 </div>
                 <div class="work-card-content">
+                    <p class="work-number">02 — BIM</p>
                     <h3>BIM aug.e</h3>
                     <p>Your project description goes here. A brief overview of the challenge, your role, and the outcome.</p>
                 </div>
             </div>
 
-            <div class="work-card">
+            <div class="work-card" id="card-3">
                 <div class="work-card-image">
-                    <img src="Images/energy.webp" alt="">
+                    <img src="images/energy.webp" alt="Energy Dashboard">
                 </div>
                 <div class="work-card-content">
+                    <p class="work-number">03 — Energy</p>
                     <h3>Energy Dashboard Lightness EU</h3>
                     <p>Your project description goes here. A brief overview of the challenge, your role, and the outcome.</p>
                 </div>
             </div>
 
-            <div class="work-card">
+            <div class="work-card" id="card-4">
                 <div class="work-card-image">
-                    <img src="Images/videogames.webp" alt="">
+                    <img src="images/videogames.webp" alt="Video Games ECL">
                 </div>
                 <div class="work-card-content">
+                    <p class="work-number">04 — Gaming</p>
                     <h3>Video Games ECL</h3>
                     <p>Your project description goes here. A brief overview of the challenge, your role, and the outcome.</p>
                 </div>
@@ -151,5 +155,22 @@
         <p>copyright Jahanzeb Chaudhary 2026</p>
     </footer>
 
+    <script>
+    const cards = document.querySelectorAll('.work-card');
+
+    window.addEventListener('scroll', () => {
+        cards.forEach((card, index) => {
+            const rect = card.getBoundingClientRect();
+            const progress = Math.max(0, Math.min(1, -rect.top / window.innerHeight));
+
+            if (index < cards.length - 1) {
+                const scale = 1 - progress * 0.08;
+                const opacity = 1 - progress * 1.2;
+                card.style.transform = `scale(${scale})`;
+                card.style.opacity = Math.max(0, opacity);
+            }
+        });
+    });
+    </script>
 </body>
 </html>
